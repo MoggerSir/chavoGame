@@ -1,0 +1,248 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden; /* Prevent scrollbars when moving */
+}
+
+.fondo{
+    width: 100%;
+    height: 100%;
+}
+
+.proyectil{
+    position: absolute;
+    width: 3em;
+    z-index: 50;
+}
+
+.conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.personaje{
+    width: 100%; 
+}
+
+.contentPersonaje{
+    position: absolute;
+    width: 10em;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enemigo-container {
+    position: absolute;
+    width: 8em;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enemigo {
+    width: 100%;
+}
+
+/* Health Bar Styles */
+.health-bar-container {
+    width: 80%;
+    height: 10px;
+    background-color: #333;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.health-bar-fill {
+    width: 100%;
+    height: 100%;
+    background-color: #2ecc71;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.health-bar-mini {
+    width: 60%;
+    height: 6px;
+    background-color: #333;
+    margin-bottom: 2px;
+}
+
+.health-bar-fill-mini {
+    width: 100%;
+    height: 100%;
+    background-color: #e74c3c;
+}
+
+/* Game Over Styles */
+.game-over-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-over-title {
+    font-size: 5rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+.game-over-score {
+    font-size: 2.5rem;
+    color: #f1c40f;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.consumible-container {
+    position: absolute;
+    width: 5em;
+    z-index: 60;
+}
+
+.consumible {
+    width: 100%;
+    filter: drop-shadow(0 0 10px #2ecc71);
+    border: 2px solid #2ecc71;
+    border-radius: 10px;
+}
+
+.restart-button {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.restart-button:hover {
+    background-color: #27ae60;
+    transform: scale(1.1);
+}
+#puntuacion, #contadorTortas {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#contadorTortas {
+    font-size: 1.5rem;
+    color: #2ecc71;
+    margin-left: 20px;
+}
+
+.ui-top {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    pointer-events: none;
+}
+
+.stats {
+    display: flex;
+    align-items: baseline;
+}
+
+#btnPause {
+    padding: 10px 25px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+    pointer-events: auto;
+    box-shadow: 0 4px #d4ac0d;
+}
+
+#btnPause:hover {
+    background-color: #f4d03f;
+    transform: translateY(-2px);
+}
+
+#btnPause:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #d4ac0d;
+}
+.music-player-container {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    width: 350px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px 0 0 15px;
+    padding: 10px;
+    z-index: 1000;
+    transform: translateX(calc(100% - 30px));
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    border: 1px solid #f1c40f;
+    border-right: none;
+}
+
+.music-player-container:hover,
+.music-player-container:active {
+    transform: translateX(0);
+}
+
+.music-handle {
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    background: #f1c40f;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.music-attribution {
+    font-size: 10px;
+    color: #cccccc;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.music-attribution a {
+    color: #f1c40f;
+    text-decoration: none;
+}

@@ -64,4 +64,8 @@ Este juego no fue simplemente "programado", fue **diseñado a través del diálo
 4. **Seguridad ITFA**: Basico creo yo, la necesidad de proteger el código, lo que me llevó a implementar campos privados (`#`) para que nadie pueda trucar su puntuación o vida desde la consola del navegador.
 5. **Estética**: Cada elección visual (brillos verdes, barras de vida dinámicas, animaciones de pausa) fue guiada por mi búsqueda de una interfaz que no fuera taaan "básica".
 
-## en general, lo unico que hice fue agilizar el proceso de creacion del juego, estos son conocimientos que ya tengo adquiridos peron explotados en su maximo pontencial por la ia, definitivamente cuando sabes lo que le pides a la ia es mucho mas facil el trabajo. En general creo que es una buena practica para "practicar" el promt ingenier.
+## Reflexión Final: El Poder del Prompt Engineering
+
+En resumen, este proyecto ha sido un ejercicio de agilización y optimización. He volcado mis conocimientos técnicos previos, potenciándolos al máximo mediante el uso estratégico de la Inteligencia Artificial. He comprobado que, cuando tienes claros los fundamentos y sabes articular tus peticiones (**Prompt Engineering**), el flujo de trabajo se vuelve exponencialmente más fluido.
+
+Este proceso no solo ha resultado en un juego funcional, sino que ha sido la plataforma perfecta para perfeccionar el arte de "hablarle" a la máquina y maximizar el potencial de la co-creación.
