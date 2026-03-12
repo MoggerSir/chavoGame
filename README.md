@@ -2,6 +2,8 @@
 
 Bienvenido a **ChavoGame**, un ''juego de naves arcade'' desarrollado mediante el concepto de **Vibe Coding**, priorizando la iteración rápida y una experiencia de usuario fluida.
 
+![ChavoGame Preview](assets/general/imagenDelReatme.png)
+
 ## Tecnologías Empleadas
 
 - **HTML5**: Estructura semántica y contenedores del juego.
