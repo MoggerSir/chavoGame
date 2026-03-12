@@ -60,11 +60,12 @@ Este juego no fue simplemente "programado", fue **diseñado a través del diálo
 
 ### Mis Decisiones Clave
 
-1. **Refactorización Modular**: MI visión fue separar el código en archivos distintos para tener un proyecto profesional y organizado.
+1. **Diseño de Assets Propios**: Para darle identidad al juego, diseñé manualmente el **fondo**, los **proyectiles**, los **enemigos** y todos los **GIFs animados**. Esto asegura que el arte no sea genérico, sino una visión personal. El único recurso externo es la "torta", integrada para agilizar la etapa final de creación de consumibles.
 2. **Equilibrio de Dificultad**: Decidi que las colisiones directas **restaran puntos (-50)** en lugar de darlos, incentivando el uso de disparos "tácticos".
 3. **Condiciones de Victoria Duplicadas**: Elegi dar al jugador dos caminos (Puntos o Recolección de Tortas).
 4. **Seguridad ITFA**: Basico creo yo, la necesidad de proteger el código, lo que me llevó a implementar campos privados (`#`) para que nadie pueda trucar su puntuación o vida desde la consola del navegador.
 5. **Estética**: Cada elección visual (brillos verdes, barras de vida dinámicas, animaciones de pausa) fue guiada por mi búsqueda de una interfaz que no fuera taaan "básica".
+6. **Refactorización Modular**: MI visión fue separar el código en archivos distintos para tener un proyecto profesional y organizado.
 
 ## Reflexión Final: El Poder del Prompt Engineering
 
